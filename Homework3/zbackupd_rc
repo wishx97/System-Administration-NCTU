@@ -1,0 +1,18 @@
+#!/bin/sh
+
+. /etc/rc.subr
+
+name=zbackupd
+rcvar=zbackupd_enable
+start_precmd="rm -f /var/log/zbackup.log"
+list_cmd="zbackup list"
+
+load_rc_config $name
+: ${zbackupd_config=/usr/local/etc/zbackupd.yaml}
+
+command=/usr/local/bin/python3
+command_args="/usr/local/bin/zbackupd.py -d -c $zbackupd_config"
+extra_commands="reload list"
+pidfile="/var/run/zbackup.pid"
+
+run_rc_command "$1"

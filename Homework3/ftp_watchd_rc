@@ -1,0 +1,23 @@
+#!/bin/sh
+
+. /etc/rc.subr
+
+name=ftp_watchd
+rcvar=ftp_watchd_enable
+
+start_precmd="${name}_prestart"
+
+load_rc_config $name
+
+command=/usr/local/sbin/pure-uploadscript
+command_args="-B -p /var/run/pure-uploadscript.pid -r /usr/local/bin/script_to_run"
+pidfile="/var/run/pure-uploadscript.pid"
+
+ftp_watchd_prestart()
+{
+	echo "#!/bin/sh" > /usr/local/bin/script_to_run
+	echo "${ftp_watchd_command}" >> /usr/local/bin/script_to_run
+	chmod +x /usr/local/bin/script_to_run
+}
+
+run_rc_command "$1"

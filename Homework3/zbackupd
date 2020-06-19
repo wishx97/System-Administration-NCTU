@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ps -ax | grep -v grep | grep zbackupd.py > /dev/null
+if [ $? -eq 1 ]
+then
+	/usr/local/bin/python3 /usr/local/bin/zbackupd.py "$@"
+else
+	echo "Process is running"
+fi
