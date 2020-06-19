@@ -14,11 +14,11 @@ Project codes and files of System Administration Course at National Chiao Tung U
 
 **Programming Language:** Shell
 
-[HW2](https://github.com/wishx97/System_Administration/tree/master/Homework2) Filesystem Statistics & Course Registration System
+[HW2](https://github.com/wishx97/SA-NCTU-FreeBSD/tree/master/Homework2) Filesystem Statistics & Course Registration System
 
-[HW3](https://github.com/wishx97/System_Administration/tree/master/Homework3) File Server
+[HW3](https://github.com/wishx97/SA-NCTU-FreeBSD/tree/master/Homework3) File Server
 
-[HW4](https://github.com/wishx97/System_Administration/tree/master/Homework4) Web Server
+[HW4](https://github.com/wishx97/SA-NCTU-FreeBSD/tree/master/Homework4) Web Server
 
-[HW5](https://github.com/wishx97/System_Administration/tree/master/Homework5) Mini Private Lab (NIS+NFS)
+[HW5](https://github.com/wishx97/SA-NCTU-FreeBSD/tree/master/Homework5) Mini Private Lab (NIS+NFS)
 
