@@ -6,7 +6,7 @@
 
 
 ## About The Project
-Projects code and files of System Administration Course at National Chiao Tung University(NCTU) .
+Project codes and files of System Administration Course at National Chiao Tung University(NCTU) .
 
 
 ## Contents
